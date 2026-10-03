@@ -28,33 +28,63 @@ Testing lead: to be decided. Each module is tested by someone other than the per
    5. saves the results as a row in a spreadsheet
 4. A summary shows the totals.
 
-![Hierarchy chart of the payroll program](hierarchy-chart.png)
+![Hierarchy chart of the payroll program](docs/hierarchy-chart.png)
 
-A printable copy of the chart is in [hierarchy-chart.pdf](hierarchy-chart.pdf).
+A printable copy of the chart is in [docs/hierarchy-chart.pdf](docs/hierarchy-chart.pdf).
 
 ## Files
 
-*These files can be either md (Markdown), pdf, doc, whatever you need to do for project leader to be able to read, they will convert to it to MD if not sumbitted as such.
+Files marked "Not started" don't exist yet. Their links show GitHub's "not found" page until the owner creates the file.
+
+### `docs/` — design and plan
+
 | File | What it is | Owner | Status |
 |---|---|---|---|
-| [system-design.md](system-design.md) | **Start here.** Shared variable list and what each module must do | Steven | Draft 1 |
-| [module-0-main.md](module-0-main.md) | Access code, menu, the 10-employee loop | Steven | Draft 1 |
-| `module-1-employee-info.md` | Entry of name, ID, dependents and hours, with security checks | Shenease | Not started |
-| `module-2-rate-lookup.md` | Hourly rate lookup by employee ID | Shenease | Not started |
-| `module-3-gross-pay.md` | Regular pay and overtime | Andrea | Not started |
-| `module-4-taxes-net-pay.md` | State tax, federal tax, net pay | Andrea | Not started |
-| [module-5-record-results.md](module-5-record-results.md) | Spreadsheet rows, totals, summary | Steven | Draft 1 |
-| `test-log.md` | Test cases and results for the whole program | Testing lead | Not started |
-| [hierarchy-chart.png](hierarchy-chart.png), [hierarchy-chart.pdf](hierarchy-chart.pdf) | Chart of all modules and who owns them | Steven | Draft 1 |
+| [system-design.md](docs/system-design.md) | **Start here.** Shared variable list and what each module must do | Steven | Draft 1 |
+| [project-plan.md](docs/project-plan.md) | Development plan: scope, owners, schedule, security and testing | Steven | Draft 1 |
+| [hierarchy-chart.png](docs/hierarchy-chart.png) | Chart of all modules and who owns them | Steven | Draft 1 |
+| [hierarchy-chart.pdf](docs/hierarchy-chart.pdf) | Printable copy of the chart | Steven | Draft 1 |
+
+### `modules/` — the pseudocode
+
+| File | What it is | Owner | Status |
+|---|---|---|---|
+| [module-0-main.md](modules/module-0-main.md) | Access code, menu, the 10-employee loop | Steven | Draft 1 |
+| [module-1-employee-info.md](modules/module-1-employee-info.md) | Entry of name, ID, dependents and hours, with security checks | Shenease | Not started |
+| [module-2-rate-lookup.md](modules/module-2-rate-lookup.md) | Hourly rate lookup by employee ID | Shenease | Not started |
+| [module-3-gross-pay.md](modules/module-3-gross-pay.md) | Regular pay and overtime | Andrea | Not started |
+| [module-4-taxes-net-pay.md](modules/module-4-taxes-net-pay.md) | State tax, federal tax, net pay | Andrea | Not started |
+| [module-5-record-results.md](modules/module-5-record-results.md) | Spreadsheet rows, totals, summary | Steven | Draft 1 |
+
+### `tests/` — test cases and results
+
+| File | What it is | Owner | Status |
+|---|---|---|---|
+| [test-log.md](tests/test-log.md) | Test cases for the whole program, with expected and actual results | Testing lead | Not started |
+| [test-data.csv](tests/test-data.csv) | The 10 made-up employees used for testing | Testing lead | Not started |
+
+### `data/` — pay rates and results
+
+| File | What it is | Owner | Status |
+|---|---|---|---|
+| [pay-rates.csv](data/pay-rates.csv) | Hourly rate for each employee ID. Becomes the database in Module 8 | Shenease | Not started |
+| [payroll-results-sample.csv](data/payroll-results-sample.csv) | Sample of the results spreadsheet | Steven | Not started |
+
+### `check-ins/` — meetings and submissions
+
+| File | What it is | Owner | Status |
+|---|---|---|---|
+| [meeting-log.md](check-ins/meeting-log.md) | Attendance and decisions for each meeting | Steven | Started |
+| [module-3-check-in.md](check-ins/module-3-check-in.md) | What we submitted for the Module 3 check-in | Steven | Not started |
 
 ## How to add your module
 
 You can do everything in the browser. Nothing needs to be installed.
 
-1. Accept the invitation email from GitHub, sign in, and open this repository. (or if not, team leader will take Canvas inbox communcations and add it to the respository)
-2. Read [system-design.md](system-design.md). Section 6 says what your module must use and set.
+1. Accept the invitation email from GitHub, sign in, and open this repository.
+2. Read [system-design.md](docs/system-design.md). Section 6 says what your module must use and set.
 3. Click **Add file**, then **Create new file**.
-4. Name the file exactly as shown in the Files table, for example `module-1-employee-info.md`.
+4. Type the folder and the file name together, exactly as shown in the Files tables, for example `modules/module-1-employee-info.md`. Typing `modules/` first puts the file in the modules folder.
 5. Type or paste your pseudocode. Put a line of three backticks above and below it so the spacing is kept:
 
    ````
@@ -74,7 +104,7 @@ Would you rather not use GitHub? Send your pseudocode in our IvyLearn Inbox thre
 
 ## Ground rules
 
-- Use the shared variable names in [system-design.md](system-design.md) exactly as spelled. All shared variables are declared once, in the main program, so do not declare them again in your module.
+- Use the shared variable names in [system-design.md](docs/system-design.md) exactly as spelled. All shared variables are declared once, in the main program, so do not declare them again in your module.
 - If you need a new shared variable, tell Steven so it gets added to the list and to main.
 - Keep the module names that main calls: `getEmployeeInfo()`, `getHourlyRate()`, `calculateGrossPay()`, `calculateTaxes()`.
 - Write in the textbook's style: `input`, `output`, `if … then … else … endif`, `while … endwhile`, and `return` at the end of each module.
@@ -104,13 +134,10 @@ Would you rather not use GitHub? Send your pseudocode in our IvyLearn Inbox thre
 | Module 8 | Rate lookup changes to a database lookup |
 | End of semester | Final project: pseudocode plus test results, submitted by the group leader |
 
+The full schedule is in [project-plan.md](docs/project-plan.md).
+
 ## Communication
 
 - **IvyLearn group (red group 1):** the "Let's Get Started" discussion and our Inbox thread. Decisions and meeting notes are posted there so our instructor can see them.
 - **This repository:** the pseudocode itself.
-
-## Meeting log
-
-| Date | Attended | Decisions |
-|---|---|---|
-| Oct 3, 2026 | | |
+- **Meetings:** attendance and decisions are recorded in [check-ins/meeting-log.md](check-ins/meeting-log.md).
