@@ -1,6 +1,6 @@
 # Payroll Program — System Design
 
-**Team:** Red Group 1 (team name to be chosen) · **Leader:** Steven Francis · **Draft 1**, Oct 3, 2026
+**Team:** Crimson Harriers (Red Group 1) · **Leader:** Steven Francis · **Draft 2**, Oct 17, 2026
 **Tool:** pseudocode, in the textbook's style (*Programming Logic and Design*)
 
 This page is the agreement that lets the three of us write our modules separately and have them fit together. If something here needs to change, tell Steven so the page and the main program get updated.
@@ -172,10 +172,11 @@ Spell these in capital letters exactly as shown.
 
 ## 8. Open questions
 
-| Question | Who decides |
-|---|---|
-| Team name | Team, at the Oct 3 meeting |
-| Testing lead | Team, at the Oct 3 meeting |
-| Employee ID format (suggestion: 4 digits, such as 1001) | Shenease |
-| Is 60 the right value for `MAX_HOURS`? Should zero hours also be flagged? | Shenease |
-| Dependents are entered and saved, but none of the required calculations use them. Should they affect tax? | Ask the instructor |
+| Question | Who decides | Answer |
+|---|---|---|
+| Team name | Team | **Crimson Harriers** |
+| Testing lead | Team | **Steven Francis** (no other volunteer) |
+| Dependents are entered and saved, but none of the required calculations use them. Should they affect tax? | Instructor | **Only recorded.** They are saved in the spreadsheet and do not change any tax (instructor, Oct 11) |
+| Should unusual hours be rejected, or confirmed and flagged? | Instructor | **Either is fine if we explain it.** We confirm and flag (instructor, Oct 11) |
+| Employee ID format (suggestion: 4 digits, such as 1001) | Shenease | Open. The test data assumes 4 digits |
+| Is 60 the right value for `MAX_HOURS`? Should zero hours also be flagged? | Shenease | Open. The test data assumes 60, and zero hours not flagged |
