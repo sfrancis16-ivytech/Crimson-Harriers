@@ -1,10 +1,10 @@
 # Payroll Program — SDEV120 Group Project
 
-**Team:** Red Group 1 (team name to be chosen) · **Course:** SDEV120 Computing Logic, Ivy Tech, Fall 2026
+**Team:** Crimson Harriers (Red Group 1) · **Course:** SDEV120 Computing Logic, Ivy Tech, Fall 2026
 
 This repository holds our group project: a payroll "program" for 10 employees, written in **pseudocode**. Nothing here is real code that runs. The program is split into modules so each of us can write our part separately and have the parts fit together.
 
-This repository is private. Please keep it within the team and our instructor.
+This repository is public, so anyone with the link can read it. Keep personal information out of it.
 
 ## Team
 
@@ -14,7 +14,7 @@ This repository is private. Please keep it within the team and our instructor.
 | Shenease Guy | Team member | Module 1 (employee information), Module 2 (rate lookup) |
 | Andrea Wilson | Team member | Module 3 (gross pay), Module 4 (taxes and net pay) |
 
-Testing lead: to be decided. Each module is tested by someone other than the person who wrote it.
+Testing lead: Steven Francis. Each module is tested by someone other than the person who wrote it.
 
 ## What the program does
 
@@ -41,7 +41,7 @@ Files marked "Not started" don't exist yet. Their links show GitHub's "not found
 | File | What it is | Owner | Status |
 |---|---|---|---|
 | [system-design.md](docs/system-design.md) | **Start here.** Shared variable list and what each module must do | Steven | Draft 1 |
-| [project-plan.md](docs/project-plan.md) | Development plan: scope, owners, schedule, security and testing | Steven | Draft 1 |
+| [project-plan.md](docs/project-plan.md) | Development plan: scope, owners, schedule, security and testing | Steven | Draft 2 |
 | [hierarchy-chart.png](docs/hierarchy-chart.png) | Chart of all modules and who owns them | Steven | Draft 1 |
 | [hierarchy-chart.pdf](docs/hierarchy-chart.pdf) | Printable copy of the chart | Steven | Draft 1 |
 
@@ -60,22 +60,21 @@ Files marked "Not started" don't exist yet. Their links show GitHub's "not found
 
 | File | What it is | Owner | Status |
 |---|---|---|---|
-| [test-log.md](tests/test-log.md) | Test cases for the whole program, with expected and actual results | Testing lead | Not started |
-| [test-data.csv](tests/test-data.csv) | The 10 made-up employees used for testing | Testing lead | Not started |
+| [test-log.md](tests/test-log.md) | Test cases for the whole program, with expected and actual results | Steven (testing lead) | Started |
 
 ### `data/` — pay rates and results
 
 | File | What it is | Owner | Status |
 |---|---|---|---|
 | [pay-rates.csv](data/pay-rates.csv) | Hourly rate for each employee ID. Becomes the database in Module 8 | Shenease | Not started |
-| [payroll-results-sample.csv](data/payroll-results-sample.csv) | Sample of the results spreadsheet | Steven | Not started |
+| [payroll-results-sample.csv](data/payroll-results-sample.csv) | Expected results spreadsheet for the 10 test employees | Steven | Done |
 
 ### `check-ins/` — meetings and submissions
 
 | File | What it is | Owner | Status |
 |---|---|---|---|
 | [meeting-log.md](check-ins/meeting-log.md) | Attendance and decisions for each meeting | Steven | Started |
-| [module-3-check-in.md](check-ins/module-3-check-in.md) | What we submitted for the Module 3 check-in | Steven | Not started |
+| [module-3-check-in.md](check-ins/module-3-check-in.md) | What we submitted for the Module 3 check-in, and the instructor's answers | Steven | Done |
 
 ## How to add your module
 
@@ -138,6 +137,6 @@ The full schedule is in [project-plan.md](docs/project-plan.md).
 
 ## Communication
 
-- **IvyLearn group (red group 1):** the "Let's Get Started" discussion and our Inbox thread. Decisions and meeting notes are posted there so our instructor can see them.
+- **IvyLearn group (Crimson Harriers):** the "Let's Get Started" discussion and our Inbox thread. Decisions and meeting notes are posted there so our instructor can see them.
 - **This repository:** the pseudocode itself.
 - **Meetings:** attendance and decisions are recorded in [check-ins/meeting-log.md](check-ins/meeting-log.md).
